@@ -1,12 +1,17 @@
+import Cup.*;
+import Decorator.Bubble;
+import Decorator.RedBean;
+import FoundationDrink.BlackTea;
+import FoundationDrink.Drink;
+
 public class Main {
 
     public static void main(String[] args) {
 
         System.out.println("**************** Welcome to MeetFresh Loyola franchisee **************"+"\n");
-        Drink drink=new BlackTea();
+        Drink drink=new BlackTea(new Small());
         drink=new Bubble(drink);
         drink=new RedBean(drink);
-        drink.setCupSize(new Small());
 
 
 

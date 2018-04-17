@@ -1,3 +1,7 @@
+package Decorator;
+import FoundationDrink.Drink;
+
+
 public class HerbalJelly extends CondimentDecorator {
     Drink drink;
     public HerbalJelly(Drink drink){
@@ -7,6 +11,11 @@ public class HerbalJelly extends CondimentDecorator {
     @Override
     public String getDrinkDetail(){
         return drink.getDrinkDetail()+", Herbal Jelly";
+    }
+
+    @Override
+    public String getStrCupSize() {
+        return drink.getStrCupSize();
     }
 
     /**

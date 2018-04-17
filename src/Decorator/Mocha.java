@@ -1,3 +1,7 @@
+package Decorator;
+
+import FoundationDrink.Drink;
+
 public class Mocha extends CondimentDecorator {
     Drink drink;
     public Mocha(Drink drink){
@@ -6,11 +10,16 @@ public class Mocha extends CondimentDecorator {
 
     @Override
     public String getDrinkDetail(){
-        return drink.getDrinkDetail()+", Mocha";
+        return drink.getDrinkDetail()+", Decorator.Mocha";
+    }
+
+    @Override
+    public String getStrCupSize() {
+        return drink.getStrCupSize();
     }
 
     /**
-     * Assume adding Mocha to expresso is 1 dollar extra
+     * Assume adding Decorator.Mocha to expresso is 1 dollar extra
      * @return
      */
     @Override

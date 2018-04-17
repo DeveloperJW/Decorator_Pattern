@@ -1,5 +1,9 @@
-public class Small implements Cups{
+package Cup;
+
+
+public class Small implements Cups {
     protected double price;
+
 
     @Override
     public String ChooseSize() {

@@ -1,3 +1,7 @@
+package Decorator;
+
+import FoundationDrink.Drink;
+
 public class RedBean extends CondimentDecorator {
     Drink drink;
     public RedBean(Drink drink){
@@ -7,6 +11,11 @@ public class RedBean extends CondimentDecorator {
     @Override
     public String getDrinkDetail(){
         return drink.getDrinkDetail()+", Red Bean";
+    }
+
+    @Override
+    public String getStrCupSize() {
+        return drink.getStrCupSize();
     }
 
     /**

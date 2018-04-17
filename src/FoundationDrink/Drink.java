@@ -1,3 +1,7 @@
+package FoundationDrink;
+
+import Cup.*;
+
 public abstract class Drink {
     public String drinkDetail="Undefined drink";
     public Cups cupSize;
